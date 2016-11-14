@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Project</title>
+    <title>Like Button with Angular</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body ng-app="app">
-    <div class="container">
+    <div class="container" ng-controller="MainController">
 
+      <button ng-click="like-button"> 0 Likes </button>
+      <button ng-click="toggle-button"> - </button>
 
     </div>
     <script src="js/bundle.js"></script>
