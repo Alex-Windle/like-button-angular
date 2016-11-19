@@ -10,8 +10,9 @@
   <body ng-app="app">
     <div class="container" ng-controller="MainController">
 
-      <button ng-click="like-button"> 0 Likes </button>
-      <button ng-click="toggle-button"> - </button>
+      <button ng-click="changeLikeButton(likes)"> {{ likes }} {{ text }} </button>
+
+      <button ng-click="toggle()"> {{ operator }} </button>
 
     </div>
     <script src="js/bundle.js"></script>
